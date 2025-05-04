@@ -1,0 +1,63 @@
+const tavernTalkData = [
+  {
+    handle: `@GandalfTheGrey 🧙‍♂️`,
+    profilePic: `images/gandalf.png`,
+    likes: 452,
+    retweets: 123,
+    tweetText: `A wizard is never late, nor is he early. He arrives precisely when he means to.`,
+    replies: [
+      {
+        handle: `@FrodoBaggins 🧝‍♂️`,
+        profilePic: `images/frodo.png`,
+        tweetText: `You were late though. We all saw it. 😅`,
+      },
+      {
+        handle: `@SarumanTheWhite ⚪`,
+        profilePic: `images/saruman.png`,
+        tweetText: `Classic Gandalf. Always dramatic.`,
+      },
+    ],
+    isLiked: false,
+    isRetweeted: false,
+    uuid: "12345-gandalf-uuid-001",
+  },
+  {
+    handle: `@CriticalHit69 🎯`,
+    profilePic: `images/rogue.png`,
+    likes: 89,
+    retweets: 24,
+    tweetText: `Just crit a dragon with a sneak attack while invisible. Rogue life = best life.`,
+    replies: [],
+    isLiked: false,
+    isRetweeted: false,
+    uuid: "rogue-uuid-4242",
+  },
+  {
+    handle: `@Bard4Life 🎵`,
+    profilePic: `images/bard.png`,
+    likes: 152,
+    retweets: 41,
+    tweetText: `Just seduced a lich with a power ballad. #Charisma20`,
+    replies: [
+      {
+        handle: `@ClericOfLight ✨`,
+        profilePic: `images/cleric.png`,
+        tweetText: `This is blasphemy.`,
+      },
+    ],
+    isLiked: false,
+    isRetweeted: false,
+    uuid: "bard-seduces-lich-888",
+  },
+  {
+    handle: `@DungeonMaster 👁️‍🗨️`,
+    profilePic: `images/dm.png`,
+    likes: 320,
+    retweets: 112,
+    tweetText: `Reminder: Your actions have consequences. Yes, even that nat 1.`,
+    replies: [],
+    isLiked: false,
+    isRetweeted: false,
+    uuid: "dm-warning-3141",
+  },
+];
