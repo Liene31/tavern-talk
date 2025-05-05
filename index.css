@@ -6,10 +6,11 @@ body {
   color: #dcc48e;
 }
 
+/* Accent Color: #7F4E1E */
+
 .container {
   width: 350px;
-  margin: 0 auto;
-  border: 1px solid red;
+  margin: 30px auto;
 }
 
 /* header */
@@ -30,9 +31,14 @@ main {
 
 textarea {
   display: block;
-  width: 260px;
-  height: 106px;
+  width: 250px;
+  height: 90px;
   resize: none;
+  background-color: transparent;
+  border: none;
+  font-size: 1.1rem;
+  /* text-align: center; */
+  color: #dcc48e;
 }
 
 .btn {
@@ -40,11 +46,30 @@ textarea {
 }
 
 .tweet-btn {
-  margin: 15px 0;
-  padding: 10px 50px;
+  margin: 35px 0;
+  padding: 10px 70px;
   border-radius: 7px;
   border: none;
   cursor: pointer;
+  background-color: #dcc48e;
+  font-family: "Crimson Pro", serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Tweet Section */
+
+h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.tweet-meta-inner {
+  justify-content: center;
 }
 
 /* Images */
@@ -64,11 +89,16 @@ img {
 
 .tweet-img {
   border-radius: 50%;
+  align-self: flex-start;
 }
 
 /* Utility */
 
 .flex {
   display: flex;
-  gap: 10px;
+  gap: 13px;
 }
+
+/* .cursor-pointer {
+  cursor: pointer;
+}  check where to put*/
