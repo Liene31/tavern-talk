@@ -1,19 +1,19 @@
-const tavernTalkData = [
+export const tavernTalkData = [
   {
     handle: `@GandalfTheGrey 🧙‍♂️`,
-    profilePic: `images/gandalf.png`,
+    profilePic: `images/gandalf.jpg`,
     likes: 452,
     retweets: 123,
     tweetText: `A wizard is never late, nor is he early. He arrives precisely when he means to.`,
     replies: [
       {
         handle: `@FrodoBaggins 🧝‍♂️`,
-        profilePic: `images/frodo.png`,
+        profilePic: `images/frodo-baggins.jpg`,
         tweetText: `You were late though. We all saw it. 😅`,
       },
       {
         handle: `@SarumanTheWhite ⚪`,
-        profilePic: `images/saruman.png`,
+        profilePic: `images/sarum.jpg`,
         tweetText: `Classic Gandalf. Always dramatic.`,
       },
     ],
@@ -23,7 +23,7 @@ const tavernTalkData = [
   },
   {
     handle: `@CriticalHit69 🎯`,
-    profilePic: `images/rogue.png`,
+    profilePic: `images/rogue.jpg`,
     likes: 89,
     retweets: 24,
     tweetText: `Just crit a dragon with a sneak attack while invisible. Rogue life = best life.`,
@@ -34,7 +34,7 @@ const tavernTalkData = [
   },
   {
     handle: `@Bard4Life 🎵`,
-    profilePic: `images/bard.png`,
+    profilePic: `images/bard.jpg`,
     likes: 152,
     retweets: 41,
     tweetText: `Just seduced a lich with a power ballad. #Charisma20`,
@@ -51,7 +51,7 @@ const tavernTalkData = [
   },
   {
     handle: `@DungeonMaster 👁️‍🗨️`,
-    profilePic: `images/dm.png`,
+    profilePic: `images/dungeon-master.jpg`,
     likes: 320,
     retweets: 112,
     tweetText: `Reminder: Your actions have consequences. Yes, even that nat 1.`,

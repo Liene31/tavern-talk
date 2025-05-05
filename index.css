@@ -109,9 +109,9 @@ img {
 
 /* Replies section */
 
-/* .hidden {
+.hidden {
   display: none;
-} */
+}
 
 .replies-inner {
   width: 75%;
