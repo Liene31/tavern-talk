@@ -29,6 +29,11 @@ main {
   margin: 10px;
 }
 
+section {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dcc48e;
+}
+
 textarea {
   display: block;
   width: 250px;
@@ -46,7 +51,7 @@ textarea {
 }
 
 .tweet-btn {
-  margin: 35px 0;
+  margin: 20px 0 40px 0;
   padding: 10px 70px;
   border-radius: 7px;
   border: none;
@@ -70,6 +75,7 @@ p {
 
 .tweet-meta-inner {
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 /* Images */
@@ -82,16 +88,6 @@ img {
   align-self: center;
 }
 
-.tweet-input-img {
-  border-radius: 50%;
-  align-self: flex-start;
-}
-
-.tweet-img {
-  border-radius: 50%;
-  align-self: flex-start;
-}
-
 /* Utility */
 
 .flex {
@@ -99,6 +95,11 @@ img {
   gap: 13px;
 }
 
+.tweet-img {
+  border-radius: 50%;
+  align-self: flex-start;
+}
+
 /* .cursor-pointer {
   cursor: pointer;
-}  check where to put*/
+}  check where to put  */
