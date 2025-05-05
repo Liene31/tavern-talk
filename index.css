@@ -2,6 +2,8 @@ body {
   margin: 0;
   font-family: "Crimson Pro", serif; /* for body*/
   /* font-family: "Almendra SC", serif;  for headers */
+  background-color: #2d1f14;
+  color: #dcc48e;
 }
 
 .container {
@@ -15,17 +17,15 @@ body {
 .header {
   justify-content: center;
 }
+
 h1 {
   font-family: "MedievalSharp", cursive;
 }
 
-.flex {
-  display: flex;
-  gap: 10px;
-}
+/* Main */
 
-.input-inner {
-  gap: 10px;
+main {
+  margin: 10px;
 }
 
 textarea {
@@ -47,19 +47,28 @@ textarea {
   cursor: pointer;
 }
 
+/* Images */
+
 img {
   width: 50px;
-  border-radius: 50%;
+}
+
+.header-img {
+  align-self: center;
 }
 
 .tweet-input-img {
-  width: 50px;
   border-radius: 50%;
   align-self: flex-start;
 }
 
-.header-img {
-  width: 50px;
-  /* border-radius: none; */
-  align-self: center;
+.tweet-img {
+  border-radius: 50%;
+}
+
+/* Utility */
+
+.flex {
+  display: flex;
+  gap: 10px;
 }
