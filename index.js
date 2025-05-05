@@ -3,7 +3,7 @@ import { tavernTalkData } from "./data.js";
 document.getElementById("container").addEventListener("click", handleClicks);
 
 function handleClicks(e) {
-  console.log(e.dataset);
+  console.log(e.target.dataset.likes);
 }
 
 function getFeedHtml() {
@@ -31,7 +31,7 @@ function getFeedHtml() {
               </div>
               <div class="tweet-likes">
                 <i class="fa-solid fa-heart"></i
-                ><span class="num-of-likes" data-replies="${tweet.uuid}">${tweet.likes}</span>
+                ><span class="num-of-likes" data-likes="${tweet.uuid}">${tweet.likes}</span>
               </div>
               <div class="tweet-retweets">
                 <i class="fa-solid fa-retweet"></i
