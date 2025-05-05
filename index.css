@@ -29,11 +29,6 @@ main {
   margin: 10px;
 }
 
-section {
-  margin-bottom: 20px;
-  border-bottom: 1px solid #dcc48e;
-}
-
 textarea {
   display: block;
   width: 250px;
@@ -44,6 +39,12 @@ textarea {
   font-size: 1.1rem;
   /* text-align: center; */
   color: #dcc48e;
+}
+
+textarea:focus {
+  outline: none !important;
+  border: 1px solid #dcc48e;
+  box-shadow: 0 0 3px #dcc48e;
 }
 
 .btn {
@@ -70,7 +71,7 @@ h2 {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .tweet-meta-inner {
@@ -78,15 +79,31 @@ p {
   margin-bottom: 20px;
 }
 
+span {
+  padding-left: 5px;
+}
+
 /* Images */
 
 img {
   width: 50px;
+  border: 1px solid black;
 }
 
 .header-img {
   align-self: center;
 }
+
+/* Replies section */
+
+.replies-inner {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* .hidden {
+  display: none;
+} */
 
 /* Utility */
 
@@ -98,6 +115,18 @@ img {
 .tweet-img {
   border-radius: 50%;
   align-self: flex-start;
+}
+
+.section-line-long {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #dcc48e;
+  border-top: 1px solid #dcc48e;
+}
+
+.section-line-short {
+  padding-top: 10px;
+  border-top: 1px solid #dcc48e;
 }
 
 /* .cursor-pointer {

@@ -24,16 +24,17 @@
   </head>
   <body>
     <div class="container">
-      <header class="flex header">
-        <img
-          src="images/two-beer-mugs.png"
-          alt="two beer mugs are held high, as if in cheers"
-          class="header-img"
-        />
-        <h1>TavernTalk</h1>
-      </header>
-      <main>
-        <section class="tweet-input-area">
+      <header>
+        <div class="flex header">
+          <img
+            src="images/two-beer-mugs.png"
+            alt="two beer mugs are held high, as if in cheers"
+            class="header-img"
+          />
+          <h1>TavernTalk</h1>
+        </div>
+
+        <div class="tweet-input-area">
           <div class="input-inner flex">
             <img
               src="images/tiefling.jpg"
@@ -50,7 +51,9 @@
           <div class="btn">
             <button class="tweet-btn">Tweet</button>
           </div>
-        </section>
+        </div>
+      </header>
+      <main class="section-line-long">
         <section class="tweet">
           <div class="flex">
             <img
@@ -69,11 +72,49 @@
           <div class="tweet-meta">
             <div class="tweet-meta-inner flex">
               <div class="tweet-replies">
-                <i class="fa-regular fa-comment-dots"></i>
+                <i class="fa-regular fa-comment-dots"></i><span>2</span>
               </div>
-              <div class="tweet-likes"><i class="fa-solid fa-heart"></i></div>
+              <div class="tweet-likes">
+                <i class="fa-solid fa-heart"></i><span>6500</span>
+              </div>
               <div class="tweet-retweets">
-                <i class="fa-solid fa-retweet"></i>
+                <i class="fa-solid fa-retweet"></i><span>3</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="replies hidden">
+          <div class="replies-inner section-line-short">
+            <div class="flex">
+              <img
+                src="images/frodo-baggins.jpg"
+                alt="Gandalf The Grey profile picture"
+                class="tweet-img"
+              />
+              <div>
+                <h2 class="handle">@FrodoBaggins 🧝‍♂️</h2>
+                <p class="reply-text">
+                  You were late though. We all saw it. 😅
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="replies hidden">
+          <div class="replies-inner section-line-short">
+            <div class="flex">
+              <img
+                src="images/frodo-baggins.jpg"
+                alt="Gandalf The Grey profile picture"
+                class="tweet-img"
+              />
+              <div>
+                <h2 class="handle">@FrodoBaggins 🧝‍♂️</h2>
+                <p class="reply-text">
+                  You were late though. We all saw it. 😅
+                </p>
               </div>
             </div>
           </div>
