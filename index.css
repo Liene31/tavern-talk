@@ -1,16 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: "Crimson Pro", serif; /* for body*/
-  /* font-family: "Almendra SC", serif;  for headers */
+  font-family: "Crimson Pro", Georgia, serif;
   background-color: #2d1f14;
   color: #dcc48e;
 }
 
-/* Accent Color: #7F4E1E */
-
 .container {
-  width: 350px;
+  max-width: 350px;
+  width: 90%;
   margin: 30px auto;
+}
+
+/* Typography */
+
+h1 {
+  font-family: "MedievalSharp", cursive;
+}
+
+h2 {
+  font-family: "Almendra SC", serif;
+  margin: 0;
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 /* header */
@@ -20,15 +39,7 @@ body {
   margin-bottom: 25px;
 }
 
-h1 {
-  font-family: "MedievalSharp", cursive;
-}
-
-/* Main */
-
-main {
-  margin: 10px;
-}
+/* Text input */
 
 textarea {
   display: block;
@@ -38,14 +49,20 @@ textarea {
   background-color: transparent;
   border: none;
   font-size: 1.1rem;
-  /* text-align: center; */
   color: #dcc48e;
+  padding: 10px;
 }
 
 textarea:focus {
   outline: none !important;
   border: 1px solid #dcc48e;
   box-shadow: 0 0 3px #dcc48e;
+}
+
+textarea::placeholder {
+  color: #dcc48e;
+  font-family: "Crimson Pro", Georgia, serif;
+  font-size: 1.5rem;
 }
 
 .btn {
@@ -59,21 +76,17 @@ textarea:focus {
   border: none;
   cursor: pointer;
   background-color: #dcc48e;
-  font-family: "Crimson Pro", serif;
+  font-family: "Crimson Pro", Georgia, serif;
   font-size: 1.2rem;
   font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.tweet-btn:hover {
+  background-color: #c5b07a;
 }
 
 /* Tweet Section */
-
-h2 {
-  margin: 0;
-  font-size: 1rem;
-}
-
-p {
-  font-size: 1rem;
-}
 
 .tweet-meta-inner {
   justify-content: center;
@@ -96,14 +109,14 @@ img {
 
 /* Replies section */
 
+/* .hidden {
+  display: none;
+} */
+
 .replies-inner {
   width: 75%;
   margin: 0 auto;
 }
-
-/* .hidden {
-  display: none;
-} */
 
 /* Utility */
 
