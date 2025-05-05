@@ -87,7 +87,6 @@ span {
 
 img {
   width: 50px;
-  border: 1px solid black;
 }
 
 .header-img {
@@ -115,6 +114,7 @@ img {
 .tweet-img {
   border-radius: 50%;
   align-self: flex-start;
+  border: 1px solid black;
 }
 
 .section-line-long {
