@@ -74,7 +74,6 @@ textarea::placeholder {
   padding: 10px 70px;
   border-radius: 7px;
   border: none;
-  cursor: pointer;
   background-color: #dcc48e;
   font-family: "Crimson Pro", Georgia, serif;
   font-size: 1.2rem;
@@ -86,7 +85,7 @@ textarea::placeholder {
   background-color: #c5b07a;
 }
 
-/* Tweet Section */
+/* Tweet Meta */
 
 .tweet-meta-inner {
   justify-content: center;
@@ -96,6 +95,10 @@ textarea::placeholder {
 span {
   padding-left: 5px;
 }
+
+/* .liked {
+  color: red;
+} */
 
 /* Images */
 
@@ -143,6 +146,6 @@ img {
   border-top: 1px solid #dcc48e;
 }
 
-/* .cursor-pointer {
+.pointer {
   cursor: pointer;
-}  check where to put  */
+}
