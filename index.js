@@ -7,6 +7,8 @@ function handleClicks(e) {
     handleLikes(e.target.dataset.likes);
   } else if (e.target.dataset.retweets) {
     handleRetweets(e.target.dataset.retweets);
+  } else if (e.target.dataset.replies) {
+    handleReplies(e.target.dataset.replies);
   }
 }
 
@@ -22,7 +24,6 @@ function handleLikes(tweetId) {
   }
 
   tweetObject.isLiked = !tweetObject.isLiked;
-  console.log(tweetObject);
 
   render();
 }
@@ -43,10 +44,15 @@ function handleRetweets(tweetId) {
   render();
 }
 
+function handleReplies(tweetId) {
+  document.getElementById(tweetId).classList.toggle("hidden");
+}
+
 function getFeedHtml() {
   let feedHtml = "";
 
   tavernTalkData.forEach(function (tweet) {
+    let repliesFeedHtml = "";
     let classLiked = "";
     let classRetweeted = "";
     if (tweet.isLiked) {
@@ -55,6 +61,27 @@ function getFeedHtml() {
     if (tweet.isRetweeted) {
       classRetweeted = "retweeted";
     }
+
+    tweet.replies.forEach(function (replies) {
+      repliesFeedHtml += `
+          
+          <div class="replies-inner section-line-short">
+            <div class="flex">
+              <img
+                src="${replies.profilePic}"
+                class="tweet-img"
+              />
+              <div>
+                <h2 class="handle">${replies.handle}</h2>
+                <p class="reply-text">
+                  ${replies.tweetText}
+                </p>
+              </div>
+            </div>
+          </div>
+        
+      `;
+    });
 
     feedHtml += `
              <div class="flex">
@@ -72,7 +99,7 @@ function getFeedHtml() {
           <div class="tweet-meta">
             <div class="tweet-meta-inner flex">
               <div class="tweet-replies">
-                <i class="fa-regular fa-comment-dots pointer"></i
+                <i class="fa-regular fa-comment-dots pointer" data-replies="${tweet.uuid}"></i
                 ><span class="num-of-replies">${tweet.replies.length}</span>
               </div>
               <div class="tweet-likes">
@@ -85,6 +112,11 @@ function getFeedHtml() {
               </div>
             </div>
           </div>
+
+          <section class="replies hidden" id="${tweet.uuid}">
+          ${repliesFeedHtml}
+          </section>
+          
     
     `;
   });

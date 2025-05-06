@@ -147,7 +147,9 @@ img {
 
 .section-line-short {
   padding-top: 10px;
+  margin-bottom: 10px;
   border-top: 1px solid #dcc48e;
+  border-bottom: 1px solid #dcc48e;
 }
 
 .pointer {

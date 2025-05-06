@@ -41,7 +41,7 @@ export const tavernTalkData = [
     replies: [
       {
         handle: `@ClericOfLight ✨`,
-        profilePic: `images/cleric.png`,
+        profilePic: `images/cleric.jpg`,
         tweetText: `This is blasphemy.`,
       },
     ],
