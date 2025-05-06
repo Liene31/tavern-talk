@@ -1,4 +1,5 @@
 import { tavernTalkData } from "./data.js";
+import { v4 as uuidv4 } from "https://jspm.dev/uuid";
 
 document.getElementById("container").addEventListener("click", handleClicks);
 
@@ -9,6 +10,8 @@ function handleClicks(e) {
     handleRetweets(e.target.dataset.retweets);
   } else if (e.target.dataset.replies) {
     handleReplies(e.target.dataset.replies);
+  } else if (e.target.id === "tweet-btn") {
+    handleBtn();
   }
 }
 
@@ -46,6 +49,26 @@ function handleRetweets(tweetId) {
 
 function handleReplies(tweetId) {
   document.getElementById(tweetId).classList.toggle("hidden");
+}
+
+function handleBtn() {
+  const inputText = document.getElementById("textarea-input");
+  if (inputText.value) {
+    tavernTalkData.unshift({
+      handle: `@AshesAndHornz 🔥`,
+      profilePic: `images/tiefling.jpg`,
+      likes: 0,
+      retweets: 0,
+      tweetText: `${inputText.value}`,
+      replies: [],
+      isLiked: false,
+      isRetweeted: false,
+      uuid: uuidv4(),
+    });
+
+    render();
+    inputText.value = "";
+  }
 }
 
 function getFeedHtml() {
