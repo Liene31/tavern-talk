@@ -51,7 +51,8 @@ function getFeedHtml() {
     let classRetweeted = "";
     if (tweet.isLiked) {
       classLiked = "liked";
-    } else if (tweet.isRetweeted) {
+    }
+    if (tweet.isRetweeted) {
       classRetweeted = "retweeted";
     }
 
