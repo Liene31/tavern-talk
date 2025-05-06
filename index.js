@@ -22,6 +22,7 @@ function handleLikes(tweetId) {
   }
 
   tweetObject.isLiked = !tweetObject.isLiked;
+  console.log(tweetObject);
 
   render();
 }
@@ -46,6 +47,14 @@ function getFeedHtml() {
   let feedHtml = "";
 
   tavernTalkData.forEach(function (tweet) {
+    let classLiked = "";
+    let classRetweeted = "";
+    if (tweet.isLiked) {
+      classLiked = "liked";
+    } else if (tweet.isRetweeted) {
+      classRetweeted = "retweeted";
+    }
+
     feedHtml += `
              <div class="flex">
             <img
@@ -66,11 +75,11 @@ function getFeedHtml() {
                 ><span class="num-of-replies">${tweet.replies.length}</span>
               </div>
               <div class="tweet-likes">
-                <i class="fa-solid fa-heart pointer liked" data-likes="${tweet.uuid}"></i
+                <i class="fa-solid fa-heart pointer ${classLiked}" data-likes="${tweet.uuid}"></i
                 ><span class="num-of-likes" >${tweet.likes}</span>
               </div>
               <div class="tweet-retweets">
-                <i class="fa-solid fa-retweet pointer" data-retweets="${tweet.uuid}"></i
+                <i class="fa-solid fa-retweet pointer ${classRetweeted}" data-retweets="${tweet.uuid}"></i
                 ><span class="num-of-retweets">${tweet.retweets}</span>
               </div>
             </div>
